@@ -1,0 +1,193 @@
+aplicativo para fazer checlist de maquinas 
+
+https://www.youtube.com/watch?v=qPYCnebQQ6U
+
+https://www.youtube.com/watch?v=SRUuQnwrC1U
+menu lateral
+
+https://www.youtube.com/watch?v=gRIWFYRaVto
+novasideias
+ 
+
+
+guithub 
+
+senha
+263819263819joao
+
+senha MYSQL 
+263819 root 
+
+
+ quetao sete 7 
+select distinct first_name from psdb.employees;
+
+
+questao 1 
+
+SELECT * FROM psdb.employees;
+
+questao 2
+SELECT  emp_no, first_name FROM psdb.employees;
+
+quetao 3 
+SELECT DISTINCT last_name FROM psdb.employees;
+Questao 4
+SELECT DISTINCT * FROM  psdb.employees ORDER BY first_name asc;******
+questao 5
+SELECT DISTINCT * FROM  psdb.employees ORDER BY first_name DESC;*****
+questao 6
+SELECT DISTINCT first_name FROM  psdb.employees ORDER BY first_name asc;
+questao 7
+SELECT DISTINCT  last_name, first_name FROM  psdb.employees;
+questao 8
+SELECT DISTINCT  last_name, first_name FROM  psdb.employees ORDER BY first_name, last_name asc;
+questao 9
+SELECT DISTINCT  last_name, first_name FROM  psdb.employees ORDER BY last_name DESC, first_name DESC;
+questao10
+SELECT DISTINCT  last_name, first_name FROM  psdb.employees ORDER BY last_name ASC, first_name ASC;
+questao 11
+SELECT * FROM  psdb.employees  limit 0 ,100;
+questao 12
+SELECT * FROM  psdb.employees emp_no limit  0 , 100;
+questao 13
+SELECT * FROM  psdb.employees ORDER BY emp_no  ASC LIMIT  0 , 100;
+14 quetao
+SELECT * FROM  psdb.employees ORDER BY emp_no  DESC LIMIT  0 , 100;
+15 questao 
+SELECT * FROM psdb.employees WHERE first_name like 'basil%' ;
+16 Questao
+SELECT * FROM psdb.employees WHERE first_name like 'basil%' ;
+questao 17
+select * from psdb.employees where first_name like 'Basil' and gender <> 'M';
+questao 18
+select * from psdb.employees where first_name like 'Basil' and last_name like 'Strooper' and gender like 'M';
+questao19
+select * from psdb.employees where first_name like 'Crist%';
+questao 20
+select * from psdb.employees where first_name like '%zette';
+questao 21
+select * from psdb.employees where first_name like '%zette' and gender like 'M';
+questao 22
+select * from psdb.employees where first_name like '%arvi%';
+questao 23
+select * from psdb.employees where first_name like '%arvi%' and gender like 'M';
+questao 24
+select * from psdb.employees where first_name like 'Yinghua' or first_name  like 'Elvis';
+questao 25
+select * from psdb.employees where first_name like 'Yinghua' or first_name  like 'Elvis' and gender like 'M';
+questao 26
+select * from psdb.employees where emp_no = 14037;
+questao 27
+select first_name, last_name from psdb.employees where emp_no = 14037;
+questao 28
+select first_name, last_name from psdb.employees where emp_no in (15037, 14039, 16039);
+questao 29
+select first_name, last_name from psdb.employees where emp_no between 14037 and 14047;
+questao 30
+select first_name, last_name from psdb.employees where emp_no >= 14037 and emp_no <= 14047;
+quetao 31
+select * from psdb.employees where first_name like 'Crist%' and emp_no > 485733; 
+questao 32
+select * from psdb.employees where first_name like 'Crist%' and emp_no >= 485733;
+questao 33
+select * from psdb.employees where first_name like 'Crist%' and emp_no < 37126;
+questao 34
+select * from psdb.employees where first_name like 'Crist%' and emp_no <= 37126;
+questao 35
+select * from psdb.employees where emp_no in (494831, 479832, 599833) and gender between 'F' and 'M';
+questao 36
+select * from psdb.employees AS emp where emp.emp_no in (494831, 479832, 599833) and emp.gender between 'F' and 'M';
+questao 37
+select * from psdb.employees AS emp where emp.emp_no in (494831, 479832, 599833) and emp.gender between 'F' and 'M';
+questao 38
+select emp.emp_no as Numero, emp.first_name as Nome from psdb.employees AS emp where emp.emp_no in (494831, 479832, 599833) and emp.gender between 'F' and 'M';
+questao 39
+select * from sakila.countrylanguage where Language like 'Dutch';
+questao 40
+SELECT
+*
+FROM sakila.city cidade
+LEFT JOIN 
+sakila.countrylanguage 
+ON sakila.countrylanguage.CountryCode = cidade.CountryCode
+where sakila.countrylanguage.Language like 'Dutch';
+questao 41
+SELECT
+*
+FROM sakila.country pais
+LEFT JOIN 
+sakila.countrylanguage 
+ON sakila.countrylanguage.CountryCode = pais.Code
+where sakila.countrylanguage.Language like 'Spanish';
+questao 42
+SELECT
+*
+FROM sakila.country pais
+LEFT JOIN 
+sakila.countrylanguage 
+ON sakila.countrylanguage.CountryCode = pais.Code
+where sakila.countrylanguage.Language like 'Spanish' and sakila.countrylanguage.Percentage > 96.00;
+
+questao 43
+
+SELECT
+*
+FROM sakila.city c
+where c.CountryCode like 'BRA' and c.Population > 1000000
+
+questao 44
+SELECT
+pais.Name,
+pais.Continent,
+pais.Region,
+pais.Population,
+cidade.Name,
+cidade.District,
+cidade.Population,
+lingua.Language
+FROM sakila.country pais, sakila.city cidade, sakila.countrylanguage lingua
+where pais.Continent like 'Europe';
+
+questao 45
+SELECT
+pais.Name,
+pais.Continent,
+pais.Region,
+pais.Population,
+cidade.Name,
+cidade.District,
+cidade.Population,
+lingua.Language
+FROM sakila.country pais, sakila.city cidade, sakila.countrylanguage lingua
+where pais.Continent like 'Europe' and lingua.IsOfficial like 'T';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Significada
+SELECT LISTA_DE_COLUNAS
+FROM LISTA_DE_TABELAS
+WHERE CONDICOES
+GROUP BY LISTA_DE_COLUNAS
+ORDER BY LISTA_DE_COLUNAS;
+
+
+
+
+
+
