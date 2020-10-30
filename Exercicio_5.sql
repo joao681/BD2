@@ -1,0 +1,1 @@
+SELECT DISTINCT * FROM  psdb.employees ORDER BY first_name

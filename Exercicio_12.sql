@@ -1,0 +1,1 @@
+SELECT * FROM  psdb.employees emp_no limit  0 , 100;
